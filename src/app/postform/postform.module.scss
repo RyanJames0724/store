@@ -1,7 +1,80 @@
-/*
- * Replace this with your own classes
- *
- * e.g.
- * .container {
- * }
-*/
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #5c7457;
+  height: 100vh;
+}
+
+section > h2 {
+  color: #ffffff;
+}
+
+section > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  grid-column-gap: 1.5rem;
+}
+
+section > div > article {
+  margin: 1rem 0;
+  background: linear-gradient(to top left, #979b8d 30%, #214e34 70%);
+  padding: 2rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #fff;
+  width: 20rem;
+}
+
+section > form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: #214e34;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+section > form > div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+section > form > div > label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #c1bcac;
+}
+
+section > form > div > input[type='text'],
+section > form > div > textarea {
+  outline: none;
+  border: 1px solid #5c7457;
+  background: transparent;
+  border-radius: 5px;
+  margin: 0.3rem 0 0;
+  padding: 0.5rem;
+  color: #fff;
+}
+
+section > form > button {
+  background: transparent;
+  color: #91a091;
+  padding: 0.2rem;
+  border: none;
+}
+
+section > form > button:hover {
+  color: #fff;
+}
